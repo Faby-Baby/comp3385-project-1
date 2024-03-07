@@ -26,3 +26,11 @@ Route::get('/about', function () {
 Route::get('/properties/create', function () {
     return view('about');
 });
+
+Route::get('/properties', function () {
+    return view('about');
+});
+
+Route::get('/properties/{property_id}', function () {
+    return view('about');
+});

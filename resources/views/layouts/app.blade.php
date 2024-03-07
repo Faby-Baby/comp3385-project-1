@@ -21,6 +21,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/about') }}">About</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/properties/create') }}">New Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/properties') }}">Properties</a>
+                </li>
             </ul>
         </div>
     </div>
