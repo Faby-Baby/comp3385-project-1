@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,13 +24,10 @@ Route::get('/about', function () {
 
 // Create additional Routes below
 
-Route::get('/properties/create', function () {
-    return view('about');
-});
+Route::get('/properties/create', [PropertyController::class, 'create']);
 
-Route::get('/properties', function () {
-    return view('about');
-});
+Route::post('/properties/create', [PropertyController::class, 'add']);
+Route::get('/properties', [PropertyController::class, 'index']);
 
 Route::get('/properties/{property_id}', function () {
     return view('about');
