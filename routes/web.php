@@ -29,6 +29,4 @@ Route::get('/properties/create', [PropertyController::class, 'create']);
 Route::post('/properties/create', [PropertyController::class, 'add']);
 Route::get('/properties', [PropertyController::class, 'index']);
 
-Route::get('/properties/{property_id}', function () {
-    return view('about');
-});
+Route::get('/properties/{property_id}', [PropertyController::class, 'prop']);

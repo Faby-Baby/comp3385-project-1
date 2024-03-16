@@ -48,4 +48,9 @@ class PropertyController extends Controller
         $properties = Property::all();
         return view('properties', ['properties' => $properties]);
     }
+
+    public function prop(Request $request) {
+        $details = Property::find($request->route('property_id'));
+        return view('property', ['details' => $details]);
+    }
 }
