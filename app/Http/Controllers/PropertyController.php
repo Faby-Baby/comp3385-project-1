@@ -17,11 +17,11 @@ class PropertyController extends Controller
         $validated = $request->validate([
             'title' => 'max:75|string|required',
             'desc' => 'string|required',
-            'bedrooms' => '|required',
-            'bathrooms' => '|required',
-            'price' => '|required',
-            'type' => '|required',
-            'location' => '|required',
+            'bedrooms' => 'numeric|required',
+            'bathrooms' => 'numeric|required',
+            'price' => 'numeric|required',
+            'type' => 'in:Apartment,House|required',
+            'location' => 'required',
             'photo' => 'file|image|required',
         ]);
 

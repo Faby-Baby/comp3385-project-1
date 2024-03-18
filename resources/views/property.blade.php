@@ -32,7 +32,7 @@
             {{ $details->location }}
         </p>
         <br>
-        <button type="submit" class=" text-white btn btn-info" disabled>Email Realtor</button>
+        <button type="submit" class=" text-white btn" style="background:#15bba8;" disabled>Email Realtor</button>
 
 
       </div>

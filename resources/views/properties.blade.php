@@ -8,7 +8,7 @@
             {{ session()->get('success') }}
         </div>
     @endif
-    <p class="lead">Welcome to your dashboard. Here you can manage your account, your clients and much more.</p>
+    <p class="lead">Welcome to your dashboard. Here you can view your properties.</p>
     <div class="row row-cols-1 row-cols-md-3 g-0">
         @foreach ($properties as $property)
             <div class="col">
@@ -29,7 +29,7 @@
                     </div>
                     
                     <a class="text-light text-decoration-none" href="/properties/{{ $property->id }}">
-                        <div class="text-center card-body bg-info">View Property</div>
+                        <div class="text-center card-body" style="background:#15bba8;"> View Property</div>
                     </a>
                     
                 </div>
